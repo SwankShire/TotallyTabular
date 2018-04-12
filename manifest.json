@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Totally Tabular",
+  "version": "1.0",
+
+  "description": "Allow re-naming of tabs",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+      "contextMenus",
+      "<all_urls>",
+      "tabs"
+  ]
+
+}

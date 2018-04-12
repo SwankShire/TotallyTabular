@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="topbar">TD System Info</div>
+  <div class="wrapper">
+    <div id="info" class="section">
+      <div class="box">
+        <label for="operating-system"></label>
+        <div id="operating-system" class="small info"></div>
+        <label for="chrome-version"></label>
+        <div id="chrome-version" class="small info"></div>
+      </div>
+    </div>
+    <div id="cpu" class="section">
+      <div class="box">
+        <label for="cpu-name"></label>
+        <div id="cpu-name" class="info"></div>
+      </div>
+    </div>
+    <div id="memory" class="section">
+      <div class="box">
+        <label for="memory-capacity"></label>
+        <div id="memory-capacity" class="info"></div>
+      </div>
+    </div>
+    <div id="storage" class="section hidden">
+      <div id="internal-storage" class="box">
+        <label for="internal-storage-units"></label>
+        <div id="internal-storage-units" class="small info"></div>
+      </div>
+      <div id="external-storage" class="box">
+        <label for="external-storage-units"></label>
+        <div id="external-storage-units" class="small info"></div>
+      </div>
+    </div>
+    <div id="network" class="section">
+      <div class="box">
+        <label for="internet-state"></label>
+        <div id="internet-state" class="info"></div>
+      </div>
+      <div class="box">
+        <label for="local-adapters"></label>
+        <div id="local-adapters" class="small info"></div>
+      </div>
+    </div>
+    <div id="bluetooth" class="section">
+      <div class="box">
+        <label for="bluetooth-state"></label>
+        <div id="bluetooth-state" class="info"></div>
+      </div>
+      <div class="box">
+        <label for="bluetooth-adapters"></label>
+        <div id="bluetooth-adapters" class="small info"></div>
+      </div>
+    </div>
+    <div id="battery" class="section hidden">
+      <div class="box">
+        <label for="battery-status"></label>
+        <div id="battery-status" class="info"></div>
+        <label for="battery-time"></label>
+        <div id="battery-time" class="small info"></div>
+      </div>
+      <div class="box">
+        <label for="battery-level"></label>
+        <div id="battery-level" class="info">
+          <div class="bar">
+            <span class="bar-section used"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="displays" class="section">
+      <div class="box">
+        <label for="primary-display"></label>
+        <div id="primary-display" class="info"></div>
+      </div>
+      <div class="box">
+        <label for="other-displays"></label>
+        <div id="other-displays" class="small info"></div>
+      </div>
+    </div>
+
+
+    <div id="sound" class="section">
+      <div class="box speaker-box">
+        <label for="speakers"></label>
+        <div id="speakers" class="info">
+          <input class="btn" id="speaker-button" type="button" value="Test">
+          <div id="ckbx">
+            <h6>Passed</h6>
+            <input id="speaker-passed" name="speakerbtn" type="radio" value="Passed">
+            <h6>Failed</h6>
+            <input id="speaker-fail" name="speakerbtn" type="radio" value="Failed">
+          </div>
+        </div>
+      </div>
+      <div class="box audioJack-box">
+        <label for="audioJack"></label>
+        <div id="audioJack" class="info">
+          <input class="btn" id="audioJack-button" type="button" value="Test">
+          <div id="ckbx">
+            <h6>Passed</h6>
+            <input id="audioJack-passed" name="audioJackbtn" type="radio" value="Passed">
+            <h6>Failed</h6>
+            <input id="audioJack-fail" name="audioJackbtn" type="radio" value="Failed">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="webcam" class="section">
+      <div class="box">
+        <label for="webcam-info"></label>
+        <div id="webcam-info" class="info">
+          <button id="webcam-btn">Take photo</button>
+          <canvas id="canvas">
+          </canvas>
+          <video id="video">Video stream not available.</video>
+          <img id="webcam-display" alt="The screen capture will appear in this box.">
+        </div>
+      </div>
+    </div>
+
+    <div id="languages" class="section">
+      <div class="box">
+        <label for="language"></label>
+        <div id="language" class="info"></div>
+      </div>
+      <div class="box">
+        <label for="accept-languages"></label>
+        <div id="accept-languages" class="small info"></div>
+      </div>
+    </div>
+    <div id="plugins" class="section hidden">
+      <div class="box">
+        <label for="plugins-list"></label>
+        <div id="plugins-list" class="small info"></div>
+      </div>
+    </div>
+  </div>
+  <script src="util.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
